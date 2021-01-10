@@ -1,0 +1,171 @@
+body {
+  text-align: center;
+  background-color: #DDDDDD;
+  color: black;
+  align-items: center;
+}
+p {
+  margin: 0% 10% 0% 10%;
+  white-space: pre-wrap;
+  
+}
+
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: underline wavy blue;
+}
+
+.card-text {
+    margin: 0% !important;
+}
+
+.card-body: {
+  text-align: left !important;
+}
+
+#draft {
+  color: black;
+}
+
+.form-row: {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    margin: 2px;
+    text-align: left;
+/*    width: 300px;*/
+}
+
+.card-header {
+    
+}
+
+.lil_note {
+    text-align: left !important;
+}
+
+.btn {
+    margin: 4px;
+    color: white !important;
+    font-family: 'Roboto Mono', monospace;
+    font-style: bold;
+    font-size: 1vw;
+    padding: 7px;
+/*    font-weight: 700;*/
+}
+
+.state-title {
+    text-align: left;
+    font-family: 'Roboto Mono', monospace;
+    font-style: bold;
+    font-weight: 700;
+}
+
+#note {
+    font-size: 70%;
+}
+
+.letter {
+    font-size: 75%;
+}
+
+
+.btn-danger {
+    
+}
+
+.desc {
+    color: red;
+    font-size: 120%;
+}
+
+.card-header {
+    font-family: 'Roboto Mono', monospace;
+}
+
+#note {
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+
+
+/*h1 {*/
+/*    */
+/*    font-style: bold;*/
+/*    font-size: 9.4vw;*/
+/*    */
+/*}*/
+/**/
+/*h4 {*/
+/*    font-size: 3.30vw;*/
+/*    */
+/*}*/
+/**/
+/*p {*/
+/*    font-size: 4vw;*/
+/*}*/
+
+
+@media only screen and (max-width: 1000px) {
+  /* For mobile phones: */
+  h1 {
+      
+      font-style: bold;
+  /*    font-size: 420%;*/
+      font-size: 9.4vw !important;
+      
+  }
+
+  h4 {
+      font-size: 6vw !important;
+      
+  }
+
+  p {
+      font-size: 4vw !important;
+  }
+  
+  .btn {
+      font-size: 3vw !important;
+/*      width: 70vw !important;*/
+      margin: 4px;
+      color: white !important;
+      font-family: 'Roboto Mono', monospace;
+      font-style: bold;
+      font-size: 1vw;
+      padding: 7px;
+  /*    font-weight: 700;*/
+  }
+  
+  p {
+    margin: 0% 5% 0% 5% !important;
+    white-space: pre-wrap !important;
+
+  }
+  
+  .small {
+      font-size: 2vw;
+  }
+  
+  .form-row {
+      
+      font-style: bold;
+      font-size: 4vw !important;
+      padding: 7px;
+  /*    font-weight: 700;*/
+  }
+  
+  .form-control {
+      height: 3vh;
+  }
+  
+  #state {
+      height: 3vh;
+  }
+}
+
