@@ -91,6 +91,11 @@ h1 {
     font-family: 'Roboto Mono', monospace;
 }
 
+.a-note {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30%;
+}
+
 
 
 
@@ -139,6 +144,8 @@ h1 {
       font-style: bold;
       font-size: 1vw;
       padding: 7px;
+      padding-left: 10px;
+      padding-right: 10px;
   /*    font-weight: 700;*/
   }
   
@@ -166,6 +173,27 @@ h1 {
   
   #state {
       height: 3vh;
+  }
+  
+  .card-header {
+      font-size: 3vw !important;
+  }
+  
+  .card h5 {
+      font-size: 4vw !important;
+  }
+  
+  .card button {
+      font-size: 3vw !important;
+  }
+  input {
+      font-size: 3vw;
+  }
+  #note {
+      font-size: 1.5vw !important;
+  }
+  .a-note {
+      font-size: 1.5vw !important;
   }
 }
 

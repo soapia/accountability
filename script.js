@@ -1155,6 +1155,7 @@ $(document).ready(function(){
     $(".see-rest").hide()
     $("hr").hide()
     $(".norm-folks").hide()
+    $(".a-note").hide()
 })
 
 var state = ""
@@ -1173,6 +1174,7 @@ $(".submit").click(function(event){
         $("hr").show()
         $("#your-state").empty()
         $("#normal-reps").empty()
+        $(".a-note").show()
         city = $("#city").val()
         state = $("#state").val()
 //        console.log(state)
