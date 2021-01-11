@@ -1,200 +1,80 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body{
   text-align: center;
-  background-color: #DDDDDD;
-  color: black;
-  align-items: center;
-}
-p {
-  margin: 0% 10% 0% 10%;
-  white-space: pre-wrap;
-  
+  padding: 4vw 10vw;
+  background-color: #f0efeb;
+;
 }
 
 
-h1 {
-    font-family: 'Roboto Mono', monospace;
-    text-decoration: underline wavy blue;
-    -webkit-text-decoration-line: underline wavy blue;
+h1{
+  font-family: 'Poppins', sans-serif;
+  color: #1d3557;
+  font-weight: 600;
+
 }
 
-.card-text {
-    margin: 0% !important;
+p{
+  font-weight: 400;
+  color: #e63946;
 }
 
-.card-body: {
-  text-align: left !important;
+.btn{
+  margin: .5vw;
+  padding: 2vh, 2.5vh;
+  background-color: #457b9d;
+  border: none;
 }
 
-#draft {
-  color: black;
+.btn:hover, .btn:active{
+  background-color: #325971 !important;
 }
 
-.form-row: {
-    display: flex;
-    align-items: center;
-    text-align: center;
+form{
+  font-family: 'Poppins', sans-serif;
+  color: #1d3557;
+  font-weight: 400;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 2px 2px 10px #CAC7B9;
+  margin-bottom: 2vh;
 }
 
-.card {
-    margin: 2px;
-    text-align: left;
-/*    width: 300px;*/
+form .btn{
+  font-size: 20px;
 }
 
-.card-header {
-    
+.state-title{
+  font-family: 'Poppins', sans-serif;
+  color: #1d3557;
+  font-weight: 600;
 }
 
-.lil_note {
-    text-align: left !important;
+.lil-note, .a-note{
+  font-family: 'Poppins', sans-serif;
+  color: #1d3557;
+  font-weight: 400;
 }
 
-.btn {
-    margin: 4px;
-    color: white !important;
-    font-family: 'Roboto Mono', monospace;
-    font-style: bold;
-    font-size: 1vw;
-    padding: 7px;
-/*    font-weight: 700;*/
+.container{
+  font-family: 'Poppins', sans-serif;
+  color: #1d3557;
+  font-weight: 400;
 }
 
-.state-title {
-    text-align: left;
-    font-family: 'Roboto Mono', monospace;
-    font-style: bold;
-    font-weight: 700;
+#clipboard-btn, #email-btn{
+  color: white;
+  padding: 2vh;
 }
 
-#note {
-    font-size: 70%;
+#generate-anchor{
+  height: 25px;
 }
 
-.letter {
-    font-size: 75%;
+.see-rest{
+  font-size: 25px;
+  background-color: #e63946;
+  weight: 600 !important;
 }
-
-
-.btn-danger {
-    
-}
-
-.desc {
-    color: red;
-    font-size: 120%;
-}
-
-.card-header {
-    font-family: 'Roboto Mono', monospace;
-}
-
-#note {
-    font-family: 'Roboto Mono', monospace;
-}
-
-.a-note {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 30%;
-}
-
-
-
-
-/*h1 {*/
-/*    */
-/*    font-style: bold;*/
-/*    font-size: 9.4vw;*/
-/*    */
-/*}*/
-/**/
-/*h4 {*/
-/*    font-size: 3.30vw;*/
-/*    */
-/*}*/
-/**/
-/*p {*/
-/*    font-size: 4vw;*/
-/*}*/
-
-
-@media only screen and (max-width: 1000px) {
-  /* For mobile phones: */
-  h1 {
-      
-      font-style: bold;
-  /*    font-size: 420%;*/
-      font-size: 9.4vw !important;
-      
-  }
-
-  h4 {
-      font-size: 6vw !important;
-      
-  }
-
-  p {
-      font-size: 4vw !important;
-  }
-  
-  .btn {
-      font-size: 3vw !important;
-/*      width: 70vw !important;*/
-      margin: 4px;
-      color: white !important;
-      font-family: 'Roboto Mono', monospace;
-      font-style: bold;
-      font-size: 1vw;
-      padding: 7px;
-      padding-left: 10px;
-      padding-right: 10px;
-  /*    font-weight: 700;*/
-  }
-  
-  p {
-    margin: 0% 5% 0% 5% !important;
-    white-space: pre-wrap !important;
-
-  }
-  
-  .small {
-      font-size: 2vw;
-  }
-  
-  .form-row {
-      
-      font-style: bold;
-      font-size: 4vw !important;
-      padding: 7px;
-  /*    font-weight: 700;*/
-  }
-  
-  .form-control {
-      height: 3vh;
-  }
-  
-  #state {
-      height: 3vh;
-  }
-  
-  .card-header {
-      font-size: 3vw !important;
-  }
-  
-  .card h5 {
-      font-size: 4vw !important;
-  }
-  
-  .card button {
-      font-size: 3vw !important;
-  }
-  input {
-      font-size: 3vw;
-  }
-  #note {
-      font-size: 1.5vw !important;
-  }
-  .a-note {
-      font-size: 1.5vw !important;
-  }
-}
-
