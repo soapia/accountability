@@ -536,7 +536,7 @@ var rep_objections = {
         'Rep. Jay Obernolte, CA-8': ["https://obernolte.house.gov/address_authentication?form=/contact", " ", "Republican"],
     },
     'CO': {
-        'Rep. Lauren Boebert, CO-3': ["https://boebert.house.gov/address_authentication?form=/contact", " ", "Republican"],
+        'Rep. Lauren Boebert, CO-3': ["https://boebert.house.gov/address_authentication?form=/contact", "*Live-tweeted the location of Speaker Nancy Pelosi", "Republican"],
         'Rep. Doug Lamborn, CO-5': ["https://lamborn.house.gov/contact", " ", "Republican"],
     },
     'FL': {
@@ -553,7 +553,7 @@ var rep_objections = {
         'Rep. John Rutherford, FL-4': ["https://rutherford.house.gov/contact", " ", "Republican"],
         'Rep. Greg Steube, FL-17': ["https://steube.house.gov/contact/email-me", " ", "Republican"],
         'Rep. Daniel Webster, FL-11': ["https://webster.house.gov/email-me", " ", "Republican"],
-        
+
         'Rep. Michael Waltz, FL-6': ["https://waltz.house.gov/contact/", "*Switched stance the night of Jan. 6"],
     },
     'GA': {
@@ -563,7 +563,7 @@ var rep_objections = {
         'Rep. Marjorie Taylor Greene, GA-14': ["https://greene.house.gov/address_authentication?form=/contact", " ", "Republican"],
         'Rep. Jody Hice, GA-10': ["https://hice.house.gov/contact/", " ", "Republican"],
         'Rep. Barry Loudermilk, GA-11': ["https://loudermilk.house.gov/contact/", " ", "Republican"],
-        
+
         'Sen. Kelly Loeffler': ["www.loeffler.senate.gov/connect/email-kelly", "*Switched stance the night of Jan. 6"],
     },
     'ID': {
@@ -572,14 +572,14 @@ var rep_objections = {
     'IL': {
         'Rep. Mike Bost, IL-12': ["https://bost.house.gov/contact", " ", "Republican"],
         'Rep. Mary Miller, IL-15': ["https://marymiller.house.gov/address_authentication?form=/contact", "*Quoted Hitler at Jan 6th's coup attempt", "Republican"],
- 
+
     },
     'IN': {
         'Rep. Jim Baird, IN-4': ["https://baird.house.gov/contact/", " ", "Republican"],
         'Rep. Jim Banks, IN-3': ["https://banks.house.gov/contact/", " ", "Republican"],
         'Rep. Greg Pence, IN-6': ["https://pence.house.gov/contact", " ", "Republican"],
         'Rep. Jackie Walorski, IN-2': ["https://walorski.house.gov/contact/", " ", "Republican"],
-        
+
         'Sen. Mike Braun': ["https://www.braun.senate.gov", "*Switched stance the night of Jan. 6"],
     },
     'KS': {
@@ -615,7 +615,7 @@ var rep_objections = {
         'Rep. Michael Guest, MS-3': ["https://guest.house.gov/contact", " ", "Republican"],
         'Rep. Trent Kelly, MS-1': ["https://trentkelly.house.gov/contact/", " ", "Republican"],
         'Rep. Steven M. Palazzo, MS-4': ["https://palazzo.house.gov/contact/", " ", "Republican"],
- 
+
     },
     'MO': {
         'Sen. Josh Hawley': ["www.hawley.senate.gov/contact-senator-hawley", " ", "Republican"],
@@ -666,7 +666,7 @@ var rep_objections = {
         'Rep. Kevin Hern, OK-1': ["https://hern.house.gov/contact/", " ", "Republican"],
         'Rep. Frank D. Lucas, OK-3': ["https://lucas.house.gov/contact", " ", "Republican"],
         'Rep. Markwayne Mullin, OK-2': ["https://mullin.house.gov/contact/", " ", "Republican"],
-        
+
         'Sen. James Lankford': ["www.lankford.senate.gov/contact/email", "*Switched stance the night of Jan. 6"],
     },
     'OR': {
@@ -697,7 +697,7 @@ var rep_objections = {
         'Rep. Diana Harshbarger, TN-1': ["https://harshbarger.house.gov/address_authentication?form=/contact", " ", "Republican"],
         'Rep. David Kustoff, TN-8': ["https://kustoff.house.gov/contact", " ", "Republican"],
         'Rep. John Rose, TN-6': ["https://johnrose.house.gov/contact", " ", "Republican"],
-        
+
         'Sen. Marsha Blackburn': ["www.blackburn.senate.gov/email-me", "*Switched stance the night of Jan. 6"],
         'Sen. Bill Hagerty': ["www.hagerty.senate.gov", "*Switched stance the night of Jan. 6"],
     },
@@ -815,7 +815,7 @@ var rep_objections = {
 //
 //console.log(num_deleted)
 function abbrState(input, to){
-    
+
     var states = [
         ['Arizona', 'AZ'],
         ['Alabama', 'AL'],
@@ -934,8 +934,8 @@ function resign_letter(city, state, type) {
     var call = ["calling for", "demanding", "pushing for", "requesting", "ordering", "asking for"]
     var resign = ["your resignation", "your removal", "your unseating", "you to resign", "you to step down", "you to be removed", "you to be unseated"]
     var position = ["position", "role"]
-    
-    
+
+
     var foment = ['instigating','inciting','agitating','encouraging','actuating','initiating','causing','prompting','bringing about','fomenting']
     var foment_past = ['instigated','incited','encouraged','actuated','initiated','caused','prompted','brought about','fomented']
     var ytsup = ["white supremacist", "racist", "discriminatory", "hateful", "divisive", "harmful", "violent", "dangerous", "murderous", "vile", "terroristic"]
@@ -948,8 +948,8 @@ function resign_letter(city, state, type) {
     var broke = ["desecrated", "broken", "dishonored", "besmirched", "violated", "defiled", "tarnished"]
     var youve = ["You've", "You have"]
     var sent2 = [`By ${foment[Math.floor(Math.random() * foment.length)]} a ${ytsup[Math.floor(Math.random() * ytsup.length)]} ${riot[Math.floor(Math.random() * riot.length)]}, you have ${broke[Math.floor(Math.random() * broke.length)]} your ${oath[Math.floor(Math.random() * oath.length)]}, which ${no_place[Math.floor(Math.random() * no_place.length)]} ${here[Math.floor(Math.random() * here.length)]}`, `${youve[Math.floor(Math.random() * youve.length)]} ${broke[Math.floor(Math.random() * broke.length)]} your ${oath[Math.floor(Math.random() * oath.length)]} by ${foment[Math.floor(Math.random() * foment.length)]} a ${ytsup[Math.floor(Math.random() * ytsup.length)]} ${riot[Math.floor(Math.random() * riot.length)]}, and that ${no_place[Math.floor(Math.random() * no_place.length)]} ${here[Math.floor(Math.random() * here.length)]}`, `You have ${foment_past[Math.floor(Math.random() * foment_past.length)]} a ${ytsup[Math.floor(Math.random() * ytsup.length)]} ${riot[Math.floor(Math.random() * riot.length)]} and ${broke[Math.floor(Math.random() * broke.length)]} your ${oath[Math.floor(Math.random() * oath.length)]}; that ${no_place[Math.floor(Math.random() * no_place.length)]} ${here[Math.floor(Math.random() * here.length)]}`]
-    
-    
+
+
     var jan6 = ["January 6th", "Jan. 6th", "01/06", "the 6th of January"]
     var event = [`What took place on ${jan6[Math.floor(Math.random() * jan6.length)]}`, `The events on ${jan6[Math.floor(Math.random() * jan6.length)]}`, `What happened on ${jan6[Math.floor(Math.random() * jan6.length)]}`, `The events that ensued on ${jan6[Math.floor(Math.random() * jan6.length)]}`, `The ${ytsup[Math.floor(Math.random() * ytsup.length)]} ${riot[Math.floor(Math.random() * riot.length)]} on ${jan6[Math.floor(Math.random() * jan6.length)]}`]
     var resulted = ["resulted in", "caused", "gave room for"]
@@ -974,12 +974,12 @@ function resign_letter(city, state, type) {
     while (threediff[0] == threediff[2] || threediff[1] == threediff[2]) {
         threediff[2] = events[Math.floor(Math.random() * events.length)]
     }
-    
-    
+
+
     var three_actions = `${threediff[0]}, ${threediff[1]}, and ${threediff[2]}`
     var cant = ["cannot", "can't"]
     var downplay = ["underestimated", "downplayed", "minimized"]
-    
+
     var legit = ["legitimizing", "boosting", "giving life to", "solidifying", "standing behind"]
     var unbased = ["baseless", "unfounded", "unsubstantiated", "conspiracy"]
     var voter = ["voter fraud", "election fraud", "election interference"]
@@ -989,7 +989,7 @@ function resign_letter(city, state, type) {
     var rally = ["push", "rally", "mobilize", "organize"]
     var ill = ["I'll", "I will"]
     var remove = ["removal", "unseating", "prosecution"]
-    
+
     var full_message = `${im[Math.floor(Math.random() * im.length)]} ${live[Math.floor(Math.random() * live.length)]} ${city}, ${state}, and ${call[Math.floor(Math.random() * call.length)]} ${resign[Math.floor(Math.random() * resign.length)]} from your ${position[Math.floor(Math.random() * position.length)]} as ${type}. ${sent2[Math.floor(Math.random() * sent2.length)]}. ${event[Math.floor(Math.random() * event.length)]} ${resulted[Math.floor(Math.random() * resulted.length)]} ${a_number[Math.floor(Math.random() * a_number.length)]} ${gross[Math.floor(Math.random() * gross.length)]} ${acts[Math.floor(Math.random() * acts.length)]}, ${incl[Math.floor(Math.random() * incl.length)]} ${three_actions}. Your ${position[Math.floor(Math.random() * position.length)]} in this ${riot[Math.floor(Math.random() * riot.length)]} ${cant[Math.floor(Math.random() * cant.length)]} be ${downplay[Math.floor(Math.random() * downplay.length)]}. By ${legit[Math.floor(Math.random() * legit.length)]} ${unbased[Math.floor(Math.random() * unbased.length)]} theories of ${voter[Math.floor(Math.random() * voter.length)]}, you ${emboldened[Math.floor(Math.random() * emboldened.length)]} ${usa[Math.floor(Math.random() * usa.length)]}'s worst, who now are planning more ${ytsup[Math.floor(Math.random() * ytsup.length)]} attacks. ${regardless[Math.floor(Math.random() * regardless.length)]} whether or not you ${resign2[Math.floor(Math.random() * resign2.length)]}, ${ill[Math.floor(Math.random() * ill.length)]} ${rally[Math.floor(Math.random() * rally.length)]} for your ${remove[Math.floor(Math.random() * remove.length)]}.`
     return full_message
 }
@@ -1019,14 +1019,14 @@ function good_letter(city, state, type) {
     var usa = ["the USA", "the United States of America", "the US", "the United States", "America", "our country", "our nation"]
     var here = [`${usa[Math.floor(Math.random() * usa.length)]}`, `${usa[Math.floor(Math.random() * usa.length)]}'s democracy`, "our democracy", "our republic"]
     var my_state = abbrState(state, 'name')
-    
+
     var sent1 = `${im[Math.floor(Math.random() * im.length)]} ${live[Math.floor(Math.random() * live.length)]} ${city}, ${state}, and ${call[Math.floor(Math.random() * call.length)]} you to ${use[Math.floor(Math.random() * use.length)]} as ${type} to ${rally[Math.floor(Math.random() * rally.length)]} the ${many[Math.floor(Math.random() * many.length)]} House ${initi[Math.floor(Math.random() * initi.length)]} to hold ${guilty[Math.floor(Math.random() * guilty.length)]} ${acct[Math.floor(Math.random() * acct.length)]} for the ${ytsup[Math.floor(Math.random() * ytsup.length)]} ${riot[Math.floor(Math.random() * riot.length)]} on ${jan6[Math.floor(Math.random() * jan6.length)]}`
-    
+
     var foment = ['instigating','inciting','agitating','encouraging','actuating','initiating','causing','prompting','bringing about','fomenting']
     var foment_past = ['instigated','incited','encouraged','actuated','initiated','caused','prompted','brought about','fomented']
-    
+
     var note_ting = " "
-    
+
     if (state in rep_objections) {
         var listreps = ""
         var state_mems = rep_objections[state]
@@ -1042,7 +1042,7 @@ function good_letter(city, state, type) {
 //                console.log(mem)
             }
         }
-        
+
         if (sorted_mems.length == 1) {
             listreps = sorted_mems[0]
         } else if (sorted_mems.length == 2) {
@@ -1058,7 +1058,7 @@ function good_letter(city, state, type) {
         }
         note_ting = ` ${sorted_mems.length} of your colleagues in ${my_state} ${foment_past[Math.floor(Math.random() * foment_past.length)]} this ${riot[Math.floor(Math.random() * riot.length)]} themselves: ${listreps}. `
     }
-    
+
     var ids = ["In doing so", "In turn", "As a result", "With this"]
     var no_place = ["has no place", "should not stand", "cannot fly", "shouldn't exist", "cannot be present"]
     var vow = ["oath", "vow", "promise", "pledge"]
@@ -1066,8 +1066,8 @@ function good_letter(city, state, type) {
     var broke = ["desecrated", "broken", "dishonored", "besmirched", "violated", "defiled", "tarnished"]
     var youve = ["They've", "They have"]
     var sent2 = [`${ids[Math.floor(Math.random() * ids.length)]}, they have ${broke[Math.floor(Math.random() * broke.length)]} their ${oath[Math.floor(Math.random() * oath.length)]}, which ${no_place[Math.floor(Math.random() * no_place.length)]} in ${here[Math.floor(Math.random() * here.length)]}`, `${youve[Math.floor(Math.random() * youve.length)]} ${broke[Math.floor(Math.random() * broke.length)]} their ${oath[Math.floor(Math.random() * oath.length)]}, and that ${no_place[Math.floor(Math.random() * no_place.length)]} in ${here[Math.floor(Math.random() * here.length)]}`, `${ids[Math.floor(Math.random() * ids.length)]}, they've ${broke[Math.floor(Math.random() * broke.length)]} their ${oath[Math.floor(Math.random() * oath.length)]}; that ${no_place[Math.floor(Math.random() * no_place.length)]} in ${here[Math.floor(Math.random() * here.length)]}`]
-    
-    
+
+
     var add = ["Additionally", "In addition", "Furthermore", "Moreover", "Likewise", "Secondly"]
     var too = ["too", "as well"]
     var prez = ["The President", "President Trump", "Trump", "Donald Trump", "Pres. Donald Trump"]
@@ -1077,8 +1077,8 @@ function good_letter(city, state, type) {
     var voter = ["voter fraud", "election fraud", "election interference"]
     var emboldened = ["emboldened", "encouraged", "inspired", "prompted"]
     var sent3 = [`${add[Math.floor(Math.random() * add.length)]}, ${prez[Math.floor(Math.random() * prez.length)]} ${must[Math.floor(Math.random() * must.length)]} held ${acct[Math.floor(Math.random() * acct.length)]}; by ${legit[Math.floor(Math.random() * legit.length)]} ${unbased[Math.floor(Math.random() * unbased.length)]} theories of ${voter[Math.floor(Math.random() * voter.length)]}, he ${emboldened[Math.floor(Math.random() * emboldened.length)]} ${usa[Math.floor(Math.random() * usa.length)]}'s worst, who now are planning more ${ytsup[Math.floor(Math.random() * ytsup.length)]} attacks`, `${prez[Math.floor(Math.random() * prez.length)]} ${must[Math.floor(Math.random() * must.length)]} held ${acct[Math.floor(Math.random() * acct.length)]}, ${too[Math.floor(Math.random() * too.length)]}; by ${legit[Math.floor(Math.random() * legit.length)]} ${unbased[Math.floor(Math.random() * unbased.length)]} theories of ${voter[Math.floor(Math.random() * voter.length)]}, he ${emboldened[Math.floor(Math.random() * emboldened.length)]} ${usa[Math.floor(Math.random() * usa.length)]}'s worst, who now are planning more ${ytsup[Math.floor(Math.random() * ytsup.length)]} attacks`]
-    
-    
+
+
     var bcof = ["Bacause of his", "With his"]
     var hecan = ["Trump can", "he can", "he's able to", "Trump is able to"]
     var rioters = ["rioters", "people", "terrorists", "white supremacists"]
@@ -1090,20 +1090,20 @@ function good_letter(city, state, type) {
     var gross = ["heinous", "vile", "abhorrent", 'abominable','atrocious', 'horrendous', 'nefarious', 'revolting']
     var acts = ["acts", "actions"]
     var sent4 = `${bcof[Math.floor(Math.random() * bcof.length)]} his ${position[Math.floor(Math.random() * position.length)]} as President, ${hecan[Math.floor(Math.random() * hecan.length)]} pardon the ${rioters[Math.floor(Math.random() * rioters.length)]} who ${plan[Math.floor(Math.random() * plan.length)]} ${kills[Math.floor(Math.random() * kills.length)]} you and your colleagues, ${aswell[Math.floor(Math.random() * aswell.length)]} ${those[Math.floor(Math.random() * those.length)]} ${comp[Math.floor(Math.random() * comp.length)]} in ${gross[Math.floor(Math.random() * gross.length)]} ${acts[Math.floor(Math.random() * acts.length)]} against ${here[Math.floor(Math.random() * here.length)]}`
-    
-    
-    
+
+
+
     var fast = ["Swift action must be taken", "You must act fast", "You must not delay", "You must act quickly", "Immediate action must be taken"]
     var protecc = ["protect", "save", "salvage", "preserve", "safeguard", "defend", "secure"]
     var sent5 = `${fast[Math.floor(Math.random() * fast.length)]} to ${protecc[Math.floor(Math.random() * protecc.length)]} ${here[Math.floor(Math.random() * here.length)]}`
-    
+
     var ifu = [`If you have already`, `If you already have`, `If you've already taken such action`, `If you've already taken a stand`]
     var thanks = [`thanks`, `thank you`]
     var cont = ["continue", "keep", "keep on", "persist in"]
     var keepon = [`${thanks[Math.floor(Math.random() * thanks.length)]}, and ${cont[Math.floor(Math.random() * cont.length)]} fighting for us`, `${thanks[Math.floor(Math.random() * thanks.length)]} -- please ${cont[Math.floor(Math.random() * cont.length)]} fighting for us`, `${thanks[Math.floor(Math.random() * thanks.length)]}, and ${cont[Math.floor(Math.random() * cont.length)]} representing us`, `${thanks[Math.floor(Math.random() * thanks.length)]}`]
     var sent6 = `${ifu[Math.floor(Math.random() * ifu.length)]}, ${keepon[Math.floor(Math.random() * keepon.length)]}`
-    
-    
+
+
     var full_message = `${sent1}.${note_ting}${sent2[Math.floor(Math.random() * sent2.length)]}. ${sent3[Math.floor(Math.random() * sent3.length)]}. ${sent4}. ${sent5}. ${sent6}.`
     return full_message
 }
@@ -1135,14 +1135,14 @@ function showAll() {
                     var rep_site = state_mems[person][0]
                     var rep_party = state_mems[person][2]
     //                ${resign_letter(city, state, type)}
-                    var bad_card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-danger"><div class="card-header">Call For Resignation</div><div class="card-body text-danger"><h5>${person}</h5><p class="card-text" id="note">${rep_note}</p><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${resign_letter(city, state, type)}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-danger" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><br><br><a href="${rep_site}" target="_" class="col-md-5 btn btn-danger" id="email-btn">send email</a></div></div></div></div>`
-                    
+                    var bad_card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-danger"><div class="card-header">Call For Resignation</div><div class="card-body text-danger"><h5>${person}</h5><p class="card-text" id="note">${rep_note}</p><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${resign_letter(city, state, type)}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-danger" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><a href="${rep_site}" target="_" class="col-md-5 btn btn-danger" id="email-btn">send email</a></div></div></div></div>`
+
                     $(`#other-states-${place}`).append(bad_card)
                     card_count+=1
                 }
                 var allPeeps = ""
                 $(".the-rest").append(`</div>`)
-                
+
             }
         }
     }
@@ -1163,7 +1163,7 @@ var city = ""
 
 $(".submit").click(function(event){
     event.preventDefault()
-    
+
     if ($("#city").val() == "" || $("#state").val() == "") {
         alert("Please make sure all you enter all info before submitting!")
     } else {
@@ -1179,7 +1179,8 @@ $(".submit").click(function(event){
         state = $("#state").val()
 //        console.log(state)
         $(".norm-folks").hide()
-        
+        jQuery('html,body').animate({scrollTop: jQuery('#generate-anchor').offset().top}, 1000);
+
         var your_members = ""
         var note1 = ""
         var sen_objections = 0
@@ -1202,8 +1203,8 @@ $(".submit").click(function(event){
                 var rep_site = state_mems[person][0]
                 var rep_party = state_mems[person][2]
 //                ${resign_letter(city, state, type)}
-                var bad_card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-danger"><div class="card-header">Call For Resignation</div><div class="card-body text-danger"><h5>${person}</h5><p class="card-text" id="note">${rep_note}</p><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${resign_letter(city, state, type)}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-danger" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><br><br><a href="${rep_site}" target="_" class="col-md-5 btn btn-danger" id="email-btn">send email</a></div></div></div></div>`
-                
+                var bad_card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-danger"><div class="card-header">Call For Resignation</div><div class="card-body text-danger"><h5>${person}</h5><p class="card-text" id="note">${rep_note}</p><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${resign_letter(city, state, type)}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-danger" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><a href="${rep_site}" target="_" class="col-md-5 btn btn-danger" id="email-btn">send email</a></div></div></div></div>`
+
                 $("#your-state").append(bad_card)
                 card_count+=1
             }
@@ -1222,13 +1223,13 @@ $(".submit").click(function(event){
                     var rep_note = state_normal[person][1]
                     var rep_site = state_normal[person][0]
                     if (party == "Democrat") {
-                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-primary"><div class="card-header">Call To Action</div><div class="card-body text-primary"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-primary" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><br><br><a href="${rep_site}" target="_" class="col-md-5 btn btn-primary" id="email-btn">send email</a></div></div></div></div>`
+                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-primary"><div class="card-header">Call To Action</div><div class="card-body text-primary"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-primary" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><a href="${rep_site}" target="_" class="col-md-5 btn btn-primary" id="email-btn">send email</a></div></div></div></div>`
                     } else if (party == "Republican") {
-                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-danger"><div class="card-header">Call To Action</div><div class="card-body text-danger"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-danger" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><br><br><a href="${rep_site}" target="_" class="col-md-5 btn btn-danger" id="email-btn">send email</a></div></div></div></div>`
+                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-danger"><div class="card-header">Call To Action</div><div class="card-body text-danger"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-danger" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><a href="${rep_site}" target="_" class="col-md-5 btn btn-danger" id="email-btn">send email</a></div></div></div></div>`
                     } else {
-                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-warning"><div class="card-header">Call To Action</div><div class="card-body text-warning"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-warning" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><br><br><a href="${rep_site}" target="_" class="col-md-5 btn btn-warning" id="email-btn">send email</a></div></div></div></div>`
+                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-warning"><div class="card-header">Call To Action</div><div class="card-body text-warning"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-warning" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><a href="${rep_site}" target="_" class="col-md-5 btn btn-warning" id="email-btn">send email</a></div></div></div></div>`
                     }
-                    
+
                     $("#normal-reps").append(card)
                     card_count+=1
                 }
@@ -1245,13 +1246,13 @@ $(".submit").click(function(event){
                     var rep_note = state_normal[person][1]
                     var rep_site = state_normal[person][0]
                     if (party == "Democrat") {
-                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-primary"><div class="card-header">Call To Action</div><div class="card-body text-primary"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-primary" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><br><br><a href="${rep_site}" target="_" class="col-md-5 btn btn-primary" id="email-btn">send email</a></div></div></div></div>`
+                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-primary"><div class="card-header">Call To Action</div><div class="card-body text-primary"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-primary" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><a href="${rep_site}" target="_" class="col-md-5 btn btn-primary" id="email-btn">send email</a></div></div></div></div>`
                     } else if (party == "Republican") {
-                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-danger"><div class="card-header">Call To Action</div><div class="card-body text-danger"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-danger" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><br><br><a href="${rep_site}" target="_" class="col-md-5 btn btn-danger" id="email-btn">send email</a></div></div></div></div>`
+                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-danger"><div class="card-header">Call To Action</div><div class="card-body text-danger"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-danger" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><a href="${rep_site}" target="_" class="col-md-5 btn btn-danger" id="email-btn">send email</a></div></div></div></div>`
                     } else {
-                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-warning"><div class="card-header">Call To Action</div><div class="card-body text-warning"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-warning" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><br><br><a href="${rep_site}" target="_" class="col-md-5 btn btn-warning" id="email-btn">send email</a></div></div></div></div>`
+                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-warning"><div class="card-header">Call To Action</div><div class="card-body text-warning"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-warning" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><a href="${rep_site}" target="_" class="col-md-5 btn btn-warning" id="email-btn">send email</a></div></div></div></div>`
                     }
-                    
+
                     $("#normal-reps").append(card)
                     card_count+=1
                 }
@@ -1268,18 +1269,18 @@ $(".submit").click(function(event){
                     var rep_note = state_normal[person][1]
                     var rep_site = state_normal[person][0]
                     if (party == "Democrat") {
-                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-primary"><div class="card-header">Call To Action</div><div class="card-body text-primary"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-primary" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><br><br><a href="${rep_site}" target="_" class="col-md-5 btn btn-primary" id="email-btn">send email</a></div></div></div></div>`
+                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-primary"><div class="card-header">Call To Action</div><div class="card-body text-primary"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-primary" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><a href="${rep_site}" target="_" class="col-md-5 btn btn-primary" id="email-btn">send email</a></div></div></div></div>`
                     } else if (party == "Republican") {
-                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-danger"><div class="card-header">Call To Action</div><div class="card-body text-danger"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-danger" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><br><br><a href="${rep_site}" target="_" class="col-md-5 btn btn-danger" id="email-btn">send email</a></div></div></div></div>`
+                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-danger"><div class="card-header">Call To Action</div><div class="card-body text-danger"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-danger" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><a href="${rep_site}" target="_" class="col-md-5 btn btn-danger" id="email-btn">send email</a></div></div></div></div>`
                     } else {
-                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-warning"><div class="card-header">Call To Action</div><div class="card-body text-warning"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-warning" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><br><br><a href="${rep_site}" target="_" class="col-md-5 btn btn-warning" id="email-btn">send email</a></div></div></div></div>`
+                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-warning"><div class="card-header">Call To Action</div><div class="card-body text-warning"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-warning" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><a href="${rep_site}" target="_" class="col-md-5 btn btn-warning" id="email-btn">send email</a></div></div></div></div>`
                     }
-                    
+
                     $("#normal-reps").append(card)
                     card_count+=1
                 }
             }
-            
+
         } else {
             if (state == "DC") {
                 your_members = "For whatever reason, DC still doesn't have statehood. It's infuriating. While they don't have voting power, you still have a delegate you can push to stand on the right side of history."
@@ -1294,13 +1295,13 @@ $(".submit").click(function(event){
                     var rep_note = state_normal[person][1]
                     var rep_site = state_normal[person][0]
                     if (party == "Democrat") {
-                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-primary"><div class="card-header">Call To Action</div><div class="card-body text-primary"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-primary" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><br><br><a href="${rep_site}" target="_" class="col-md-5 btn btn-primary" id="email-btn">send email</a></div></div></div></div>`
+                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-primary"><div class="card-header">Call To Action</div><div class="card-body text-primary"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-primary" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><a href="${rep_site}" target="_" class="col-md-5 btn btn-primary" id="email-btn">send email</a></div></div></div></div>`
                     } else if (party == "Republican") {
-                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-danger"><div class="card-header">Call To Action</div><div class="card-body text-danger"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-danger" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><br><br><a href="${rep_site}" target="_" class="col-md-5 btn btn-danger" id="email-btn">send email</a></div></div></div></div>`
+                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-danger"><div class="card-header">Call To Action</div><div class="card-body text-danger"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-danger" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><a href="${rep_site}" target="_" class="col-md-5 btn btn-danger" id="email-btn">send email</a></div></div></div></div>`
                     } else {
-                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-warning"><div class="card-header">Call To Action</div><div class="card-body text-warning"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-warning" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><br><br><a href="${rep_site}" target="_" class="col-md-5 btn btn-warning" id="email-btn">send email</a></div></div></div></div>`
+                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-warning"><div class="card-header">Call To Action</div><div class="card-body text-warning"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-warning" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><a href="${rep_site}" target="_" class="col-md-5 btn btn-warning" id="email-btn">send email</a></div></div></div></div>`
                     }
-                    
+
                     $("#normal-reps").append(card)
                     card_count+=1
                 }
@@ -1317,13 +1318,13 @@ $(".submit").click(function(event){
                     var rep_note = state_normal[person][1]
                     var rep_site = state_normal[person][0]
                     if (party == "Democrat") {
-                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-primary"><div class="card-header">Call To Action</div><div class="card-body text-primary"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-primary" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><br><br><a href="${rep_site}" target="_" class="col-md-5 btn btn-primary" id="email-btn">send email</a></div></div></div></div>`
+                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-primary"><div class="card-header">Call To Action</div><div class="card-body text-primary"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-primary" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><a href="${rep_site}" target="_" class="col-md-5 btn btn-primary" id="email-btn">send email</a></div></div></div></div>`
                     } else if (party == "Republican") {
-                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-danger"><div class="card-header">Call To Action</div><div class="card-body text-danger"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-danger" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><br><br><a href="${rep_site}" target="_" class="col-md-5 btn btn-danger" id="email-btn">send email</a></div></div></div></div>`
+                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-danger"><div class="card-header">Call To Action</div><div class="card-body text-danger"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-danger" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><a href="${rep_site}" target="_" class="col-md-5 btn btn-danger" id="email-btn">send email</a></div></div></div></div>`
                     } else {
-                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-warning"><div class="card-header">Call To Action</div><div class="card-body text-warning"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-warning" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><br><br><a href="${rep_site}" target="_" class="col-md-5 btn btn-warning" id="email-btn">send email</a></div></div></div></div>`
+                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-warning"><div class="card-header">Call To Action</div><div class="card-body text-warning"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-warning" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><a href="${rep_site}" target="_" class="col-md-5 btn btn-warning" id="email-btn">send email</a></div></div></div></div>`
                     }
-                    
+
                     $("#normal-reps").append(card)
                     card_count+=1
                 }
@@ -1340,29 +1341,29 @@ $(".submit").click(function(event){
                     var rep_note = state_normal[person][1]
                     var rep_site = state_normal[person][0]
                     if (party == "Democrat") {
-                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-primary"><div class="card-header">Call To Action</div><div class="card-body text-primary"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-primary" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><br><br><a href="${rep_site}" target="_" class="col-md-5 btn btn-primary" id="email-btn">send email</a></div></div></div></div>`
+                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-primary"><div class="card-header">Call To Action</div><div class="card-body text-primary"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-primary" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><a href="${rep_site}" target="_" class="col-md-5 btn btn-primary" id="email-btn">send email</a></div></div></div></div>`
                     } else if (party == "Republican") {
-                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-danger"><div class="card-header">Call To Action</div><div class="card-body text-danger"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-danger" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><br><br><a href="${rep_site}" target="_" class="col-md-5 btn btn-danger" id="email-btn">send email</a></div></div></div></div>`
+                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-danger"><div class="card-header">Call To Action</div><div class="card-body text-danger"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-danger" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><a href="${rep_site}" target="_" class="col-md-5 btn btn-danger" id="email-btn">send email</a></div></div></div></div>`
                     } else {
-                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-warning"><div class="card-header">Call To Action</div><div class="card-body text-warning"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-warning" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><br><br><a href="${rep_site}" target="_" class="col-md-5 btn btn-warning" id="email-btn">send email</a></div></div></div></div>`
+                        card = `<div class="col-lg-4 col-md-12 mb-3"><div class="card border-warning"><div class="card-header">Call To Action</div><div class="card-body text-warning"><h5>${person}</h5><a class="text-info" id="email-btn" data-toggle="collapse" href="#collapse${card_count}" role="button" aria-expanded="false" aria-controls="collapse${card_count}">preview prompt ▼</a><div class="collapse" id="collapse${card_count}"><div class="card card-body" id="letter${card_count}">${good_letter(city, state, person.substring(0, 1))}</div></div><br><br><div class = "row justify-content-center"><br><a class="col-md-5 btn btn-warning" id="clipboard-btn" onclick="copyTexts('letter${card_count}')" data-clipboard-text="$('.letter${card_count}').text()">copy prompt</a><a href="${rep_site}" target="_" class="col-md-5 btn btn-warning" id="email-btn">send email</a></div></div></div></div>`
                     }
-                    
+
                     $("#normal-reps").append(card)
                     card_count+=1
-                    
+
                 }
             }
         }
-        
+
 //        console.log(sen_objections)
 //        console.log(house_objections)
 //        console.log(your_members)
         $(".lil-note").text(your_members)
-        
+
         for (var i=0; i <= sen_objections+house_objections; i++) {
-            
+
         }
-        
+
      /*
         var call = ["call", "demand", "push", "request", "order"]
         var askVerb = ["ask", "implore", "beg", "request"]
@@ -1402,31 +1403,31 @@ $(".submit").click(function(event){
         var should = ["should", "must", "ought to"]
         var forever = ["eternally remain in its future", "forever be a part of its future", "be inscribed in its future"]
         var para1 = `${im[Math.floor(Math.random() * im.length)]} ${writing[Math.floor(Math.random() * writing.length)]} today to ${call[Math.floor(Math.random() * call.length)]} for ${memorialize[Math.floor(Math.random() * memorialize.length)]} ${gandd[Math.floor(Math.random() * gandd.length)]}, who ${lostlives[Math.floor(Math.random() * lostlives.length)]}. ${morning[Math.floor(Math.random() * morning.length)]}. ${daysLater[Math.floor(Math.random() * daysLater.length)]}, ${per[Math.floor(Math.random() * per.length)]} the City of Santa Clarita, ${over15[Math.floor(Math.random() * over15.length)]} ${people[Math.floor(Math.random() * people.length)]} ${gathered[Math.floor(Math.random() * gathered.length)]} at Central Park for a ${moving[Math.floor(Math.random() * moving.length)]} ${vigil[Math.floor(Math.random() * vigil.length)]}, the largest gathering ${history[Math.floor(Math.random() * history.length)]}. This ${vigil[Math.floor(Math.random() * vigil.length)]} honored the ${lives[Math.floor(Math.random() * lives.length)]} of ${gandd[Math.floor(Math.random() * gandd.length)]}, and all those ${afflicted[Math.floor(Math.random() * afflicted.length)]} by this ${tragedy[Math.floor(Math.random() * tragedy.length)]}. This ${vigil[Math.floor(Math.random() * vigil.length)]}'s ${impact[Math.floor(Math.random() * impact.length)]} ${cant[Math.floor(Math.random() * cant.length)]} ${overstated[Math.floor(Math.random() * overstated.length)]}. ${gandd[Math.floor(Math.random() * gandd.length)]} ${brought[Math.floor(Math.random() * brought.length)]} Central Park in an unprecedented ${way[Math.floor(Math.random() * way.length)]} that ${should[Math.floor(Math.random() * should.length)]} always be remembered by ${scv[Math.floor(Math.random() * scv.length)]}. Both ${gandd[Math.floor(Math.random() * gandd.length)]} are forever a part of the ${scv[Math.floor(Math.random() * scv.length)]}’s history, and ${should[Math.floor(Math.random() * should.length)]} ${forever[Math.floor(Math.random() * forever.length)]}.`
-        
+
         var recog = ["recognized", "confirmed", "acknowledged", "affirmed", "approved", "okayed"]
         var req = ["ask", "request"]
         var right = ["right", "correct", "fair", "just"]
         var same = [`it is only ${right[Math.floor(Math.random() * right.length)]} that you do the same`, `to do the same is the ${right[Math.floor(Math.random() * right.length)]} next step`, `we simply ${askVerb[Math.floor(Math.random() * askVerb.length)]} you to do the same`]
         var para4 = `The City Council of ${scv[Math.floor(Math.random() * scv.length)]} has already ${recog[Math.floor(Math.random() * recog.length)]} this ${req[Math.floor(Math.random() * req.length)]}, ${same[Math.floor(Math.random() * same.length)]}.`
-        
+
         var source = {
                 subject: ["Public Comment", "Written Comment", "Memorial Comment", "Comment for Today's Meeting"],
                 body: `To the Santa Clarita Water Board:\n\nMy name is ${name}. ${relation1}${relation2}${relation3}${relation4}\n ${para1}\n\n${para4}\n\n${thoughts}\n\nSincerely,\n\n${name}`,
                 to: "ajacobs@scvwa.org",
                 cc: "mstone@scvwa.org,scole@scvwa.org,kabercrombie@scvwa.org,bjatkins@atkinsenvironmental.com,edwardacolley@gmail.com,wcooper61@att.net,bob.diprimio@gmail.com,ejglad@aol.com,electmaria@gmail.com,rjkelly39@hotmail.com,grm25325@aol.com,lynnepl1@juno.com",
             }
-        
+
         var randomSubject = source["subject"][Math.floor(Math.random() * source["subject"].length)]
         var newSubject = encodeURIComponent(randomSubject + " - " + name)
         var newBody = encodeURIComponent(`${source["body"]}`)
         var link = `mailto:${source["to"]}?cc=${source["cc"]}&subject=${newSubject}&body=${newBody}`
         $("#email-text").text(source["body"])
         $("#email-btn").attr("href", link)
-        
+
         $("#draft").show()
       */
         }
-      
+
 })
 
 //$(".see-rest").click(showAll())

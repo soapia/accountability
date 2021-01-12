@@ -1,121 +1,86 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body{
   text-align: center;
-  background-color: #DDDDDD;
-  color: black;
-  align-items: center;
-}
-p {
-  margin: 0% 10% 0% 10%;
-  white-space: pre-wrap;
-  
-}
-
-
-h1 {
-    font-family: 'Roboto Mono', monospace;
-    text-decoration: underline wavy blue;
-    -webkit-text-decoration-line: underline wavy blue;
-}
-
-.card-text {
-    margin: 0% !important;
-}
-
-.card-body: {
-  text-align: left !important;
-}
-
-#draft {
-  color: black;
-}
-
-.form-row: {
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-.card {
-    margin: 2px;
-    text-align: left;
-/*    width: 300px;*/
-}
-
-.card-header {
-    
-}
-
-.lil_note {
-    text-align: left !important;
-}
-
-.btn {
-    margin: 4px;
-    color: white !important;
-    font-family: 'Roboto Mono', monospace;
-    font-style: bold;
-    font-size: 1vw;
-    padding: 7px;
-/*    font-weight: 700;*/
-}
-
-.state-title {
-    text-align: left;
-    font-family: 'Roboto Mono', monospace;
-    font-style: bold;
-    font-weight: 700;
-}
-
-#note {
-    font-size: 70%;
-}
-
-.letter {
-    font-size: 75%;
-}
-
-
-.btn-danger {
-    
+  padding: 4vw;
+  background-color: #f0efeb;
+  font-family: 'Poppins', sans-serif;
 }
 
 .desc {
-    color: red;
-    font-size: 120%;
+    padding: 0vw 5vw;
 }
 
-.card-header {
-    font-family: 'Roboto Mono', monospace;
+h1{
+  font-family: 'Poppins', sans-serif;
+  color: #1d3557;
+  font-weight: 600;
+
 }
 
-#note {
-    font-family: 'Roboto Mono', monospace;
+p{
+  font-weight: 400;
+  color: #e63946;
 }
 
-.a-note {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 30%;
+.btn{
+  margin: .5vw;
+  padding: 2vh, 2.5vh;
+  background-color: #457b9d;
+  border: none;
 }
 
+.btn:hover, .btn:active{
+  background-color: #325971 !important;
+}
 
+form{
+  font-family: 'Poppins', sans-serif;
+  color: #1d3557;
+  font-weight: 400;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 2px 2px 10px #CAC7B9;
+  margin-bottom: 2vh;
+}
 
+form .btn{
+  font-size: 20px;
+}
 
-/*h1 {*/
-/*    */
-/*    font-style: bold;*/
-/*    font-size: 9.4vw;*/
-/*    */
-/*}*/
-/**/
-/*h4 {*/
-/*    font-size: 3.30vw;*/
-/*    */
-/*}*/
-/**/
-/*p {*/
-/*    font-size: 4vw;*/
-/*}*/
+.state-title{
+  font-family: 'Poppins', sans-serif;
+  color: #1d3557;
+  font-weight: 600;
+}
 
+.lil-note, .a-note{
+  font-family: 'Poppins', sans-serif;
+  color: #1d3557;
+  font-weight: 400;
+}
+
+.container{
+  font-family: 'Poppins', sans-serif;
+  color: #1d3557;
+  font-weight: 400;
+}
+
+#clipboard-btn, #email-btn{
+  color: white;
+  padding: 2vh;
+}
+
+#generate-anchor{
+  height: 25px;
+}
+
+.see-rest{
+  font-size: 25px;
+  background-color: #e63946;
+  weight: 600 !important;
+}
 
 @media only screen and (max-width: 1000px) {
   /* For mobile phones: */
@@ -133,7 +98,7 @@ h1 {
   }
 
   p {
-      font-size: 4vw !important;
+      font-size: 3vw !important;
   }
   
   .btn {
@@ -141,7 +106,7 @@ h1 {
 /*      width: 70vw !important;*/
       margin: 4px;
       color: white !important;
-      font-family: 'Roboto Mono', monospace;
+/*      font-family: 'Roboto Mono', monospace;*/
       font-style: bold;
       font-size: 1vw;
       padding: 7px;
@@ -150,8 +115,16 @@ h1 {
   /*    font-weight: 700;*/
   }
   
+  #email-btn {
+      padding: 10px !important;
+  }
+  
+  #clipboard-btn {
+      padding: 10px !important;
+  }
+  
   p {
-    margin: 0% 5% 0% 5% !important;
+/*    margin: 0% 5% 0% 5% !important;*/
     white-space: pre-wrap !important;
 
   }
@@ -192,9 +165,14 @@ h1 {
   }
   #note {
       font-size: 1.5vw !important;
+      
   }
   .a-note {
       font-size: 1.5vw !important;
   }
+  .desc {
+      padding: 0vw;
+  }
 }
+
 
