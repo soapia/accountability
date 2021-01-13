@@ -564,7 +564,7 @@ var rep_objections = {
         'Rep. Jody Hice, GA-10': ["https://hice.house.gov/contact/", " ", "Republican"],
         'Rep. Barry Loudermilk, GA-11': ["https://loudermilk.house.gov/contact/", " ", "Republican"],
 
-        'Sen. Kelly Loeffler': ["www.loeffler.senate.gov/connect/email-kelly", "*Switched stance the night of Jan. 6"],
+        'Sen. Kelly Loeffler': ["https://www.loeffler.senate.gov/connect/email-kelly", "*Switched stance the night of Jan. 6"],
     },
     'ID': {
         'Rep. Russ Fulcher, ID-1': ["https://fulcher.house.gov/contact", " ", "Republican"],
@@ -611,14 +611,14 @@ var rep_objections = {
         'Rep. Jim Hagedorn, MN-1': ["https://hagedorn.house.gov/contact", " ", "Republican"],
     },
     'MS': {
-        'Sen. Cindy Hyde-Smith': ["www.hydesmith.senate.gov/content/contact-senator", " ", "Republican"],
+        'Sen. Cindy Hyde-Smith': ["https://www.hydesmith.senate.gov/content/contact-senator", " ", "Republican"],
         'Rep. Michael Guest, MS-3': ["https://guest.house.gov/contact", " ", "Republican"],
         'Rep. Trent Kelly, MS-1': ["https://trentkelly.house.gov/contact/", " ", "Republican"],
         'Rep. Steven M. Palazzo, MS-4': ["https://palazzo.house.gov/contact/", " ", "Republican"],
 
     },
     'MO': {
-        'Sen. Josh Hawley': ["www.hawley.senate.gov/contact-senator-hawley", " ", "Republican"],
+        'Sen. Josh Hawley': ["https://www.hawley.senate.gov/contact-senator-hawley", " ", "Republican"],
         'Rep. Sam Graves, MO-6': ["https://graves.house.gov/contact", " ", "Republican"],
         'Rep. Vicky Hartzler, MO-4': ["https://hartzler.house.gov/contact-me", " ", "Republican"],
         'Rep. Billy Long, MO-7': ["https://long.house.gov/contact/", " ", "Republican"],
@@ -627,7 +627,7 @@ var rep_objections = {
     },
     'MT': {
         'Rep. Matt Rosendale, MT-0': ["https://rosendale.house.gov/contact/", " ", "Republican"],
-        'Sen. Steve Daines': ["www.daines.senate.gov/connect/email-steve", " ", "Republican"],
+        'Sen. Steve Daines': ["https://www.daines.senate.gov/connect/email-steve", " ", "Republican"],
     },
     'NE': {
         'Rep. Adrian Smith, NE-3': ["https://adriansmith.house.gov/contact", " ", "Republican"],
@@ -667,7 +667,7 @@ var rep_objections = {
         'Rep. Frank D. Lucas, OK-3': ["https://lucas.house.gov/contact", " ", "Republican"],
         'Rep. Markwayne Mullin, OK-2': ["https://mullin.house.gov/contact/", " ", "Republican"],
 
-        'Sen. James Lankford': ["www.lankford.senate.gov/contact/email", "*Switched stance the night of Jan. 6"],
+        'Sen. James Lankford': ["https://www.lankford.senate.gov/contact/email", "*Switched stance the night of Jan. 6"],
     },
     'OR': {
         'Rep. Cliff Bentz, OR-2': ["https://bentz.house.gov", " ", "Republican"],
@@ -698,11 +698,11 @@ var rep_objections = {
         'Rep. David Kustoff, TN-8': ["https://kustoff.house.gov/contact", " ", "Republican"],
         'Rep. John Rose, TN-6': ["https://johnrose.house.gov/contact", " ", "Republican"],
 
-        'Sen. Marsha Blackburn': ["www.blackburn.senate.gov/email-me", "*Switched stance the night of Jan. 6"],
-        'Sen. Bill Hagerty': ["www.hagerty.senate.gov", "*Switched stance the night of Jan. 6"],
+        'Sen. Marsha Blackburn': ["https://www.blackburn.senate.gov/email-me", "*Switched stance the night of Jan. 6"],
+        'Sen. Bill Hagerty': ["https://www.hagerty.senate.gov", "*Switched stance the night of Jan. 6"],
     },
     'TX': {
-        'Sen. Ted Cruz': ["www.cruz.senate.gov/?p=form&id=16", " ", "Republican"],
+        'Sen. Ted Cruz': ["https://www.cruz.senate.gov/?p=form&id=16", " ", "Republican"],
         'Rep. Jodey Arrington, TX-19': ["https://arrington.house.gov/contact/", " ", "Republican"],
         'Rep. Brian Babin, TX-36': ["https://babin.house.gov/contact/", " ", "Republican"],
         'Rep. Michael C. Burgess, TX-26': ["https://burgess.house.gov/contact/", " ", "Republican"],
@@ -742,7 +742,7 @@ var rep_objections = {
         'Rep. Alex Mooney, WV-2': ["https://mooney.house.gov/contact", " ", "Republican"],
     },
     'WY': {
-        'Sen. Cynthia Lummis': ["www.lummis.senate.gov", " ", "Republican"],
+        'Sen. Cynthia Lummis': ["https://www.lummis.senate.gov", " ", "Republican"],
     }
 }
 
