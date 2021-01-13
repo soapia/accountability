@@ -511,15 +511,15 @@ var rep_objections = {
     'AL': {
         'Sen. Tommy Tuberville': ["https://www.tuberville.senate.gov/", " ", "Republican"],
         'Rep. Robert B. Aderholt, AL-4': ["https://aderholt.house.gov/contact-robert", " ", "Republican"],
-        'Rep. Mo Brooks, AL-5': ["https://brooks.house.gov/contact-me", " ", "Republican"],
+        'Rep. Mo Brooks, AL-5': ["https://brooks.house.gov/contact-me", "*Worked with founder of 'Stop The Steal' to incite insurrection", "Republican"],
         'Rep. Jerry Carl, AL-1': ["https://carl.house.gov/", " ", "Republican"],
         'Rep. Barry Moore, AL-2': ["https://barrymoore.house.gov/", " ", "Republican"],
         'Rep. Gary Palmer, AL-6': ["https://palmer.house.gov/contact", " ", "Republican"],
         'Rep. Mike D. Rogers, AL-3': ["https://mikerogers.house.gov/contact/", " ", "Republican"],
     },
     'AZ': {
-        'Rep. Andy Biggs, AZ-5': ["https://biggs.house.gov/contact", " ", "Republican"],
-        'Rep. Paul A. Gosar, AZ-4': ["https://gosar.house.gov/contact/", " ", "Republican"],
+        'Rep. Andy Biggs, AZ-5': ["https://biggs.house.gov/contact", "*Worked with founder of 'Stop The Steal' to incite insurrection", "Republican"],
+        'Rep. Paul A. Gosar, AZ-4': ["https://gosar.house.gov/contact/", "*Worked with founder of 'Stop The Steal' to incite insurrection", "Republican"],
         'Rep. Debbie Lesko, AZ-8': ["https://lesko.house.gov/contact/", " ", "Republican"],
         'Rep. David Schweikert, AZ-6': ["https://schweikert.house.gov/contact", " ", "Republican"],
     },
