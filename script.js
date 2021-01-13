@@ -722,7 +722,7 @@ var rep_objections = {
     },
     'UT': {
         'Rep. Burgess Owens, UT-4': ["https://owens.house.gov/address_authentication?form=/contact", " ", "Republican"],
-        'Rep. Chris Stewart, UT-2': ["https://stewart.house.gov/contact/", " ", "Republican"],
+        'Rep. Chris Stewart, UT-2': ["https://stewart.house.gov/", " ", "Republican"],
     },
     'VA': {
         'Rep. Ben Cline, VA-6': ["https://cline.house.gov/contact", " ", "Republican"],
