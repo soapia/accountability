@@ -1079,7 +1079,7 @@ function good_letter(city, state, type) {
     var sent3 = [`${add[Math.floor(Math.random() * add.length)]}, ${prez[Math.floor(Math.random() * prez.length)]} ${must[Math.floor(Math.random() * must.length)]} held ${acct[Math.floor(Math.random() * acct.length)]}; by ${legit[Math.floor(Math.random() * legit.length)]} ${unbased[Math.floor(Math.random() * unbased.length)]} theories of ${voter[Math.floor(Math.random() * voter.length)]}, he ${emboldened[Math.floor(Math.random() * emboldened.length)]} ${usa[Math.floor(Math.random() * usa.length)]}'s worst, who now are planning more ${ytsup[Math.floor(Math.random() * ytsup.length)]} attacks`, `${prez[Math.floor(Math.random() * prez.length)]} ${must[Math.floor(Math.random() * must.length)]} held ${acct[Math.floor(Math.random() * acct.length)]}, ${too[Math.floor(Math.random() * too.length)]}; by ${legit[Math.floor(Math.random() * legit.length)]} ${unbased[Math.floor(Math.random() * unbased.length)]} theories of ${voter[Math.floor(Math.random() * voter.length)]}, he ${emboldened[Math.floor(Math.random() * emboldened.length)]} ${usa[Math.floor(Math.random() * usa.length)]}'s worst, who now are planning more ${ytsup[Math.floor(Math.random() * ytsup.length)]} attacks`]
 
 
-    var bcof = ["Bacause of his", "With his"]
+    var bcof = ["Because of his", "With his"]
     var hecan = ["Trump can", "he can", "he's able to", "Trump is able to"]
     var rioters = ["rioters", "people", "terrorists", "white supremacists"]
     var kills = ["kill", "murder", "assassinate", "hang"]
