@@ -1089,7 +1089,7 @@ function good_letter(city, state, type) {
     var comp = ["were complicit", "played a role", "share responsibility"]
     var gross = ["heinous", "vile", "abhorrent", 'abominable','atrocious', 'horrendous', 'nefarious', 'revolting']
     var acts = ["acts", "actions"]
-    var sent4 = `${bcof[Math.floor(Math.random() * bcof.length)]} his ${position[Math.floor(Math.random() * position.length)]} as President, ${hecan[Math.floor(Math.random() * hecan.length)]} pardon the ${rioters[Math.floor(Math.random() * rioters.length)]} who ${plan[Math.floor(Math.random() * plan.length)]} ${kills[Math.floor(Math.random() * kills.length)]} you and your colleagues, ${aswell[Math.floor(Math.random() * aswell.length)]} ${those[Math.floor(Math.random() * those.length)]} ${comp[Math.floor(Math.random() * comp.length)]} in ${gross[Math.floor(Math.random() * gross.length)]} ${acts[Math.floor(Math.random() * acts.length)]} against ${here[Math.floor(Math.random() * here.length)]}`
+    var sent4 = `${bcof[Math.floor(Math.random() * bcof.length)]} ${position[Math.floor(Math.random() * position.length)]} as President, ${hecan[Math.floor(Math.random() * hecan.length)]} pardon the ${rioters[Math.floor(Math.random() * rioters.length)]} who ${plan[Math.floor(Math.random() * plan.length)]} ${kills[Math.floor(Math.random() * kills.length)]} you and your colleagues, ${aswell[Math.floor(Math.random() * aswell.length)]} ${those[Math.floor(Math.random() * those.length)]} ${comp[Math.floor(Math.random() * comp.length)]} in ${gross[Math.floor(Math.random() * gross.length)]} ${acts[Math.floor(Math.random() * acts.length)]} against ${here[Math.floor(Math.random() * here.length)]}`
 
 
 
