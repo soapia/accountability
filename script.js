@@ -957,7 +957,7 @@ function resign_letter(city, state, type) {
     var gross = ["heinous", "vile", "abhorrent", 'abominable','atrocious', 'horrendous', 'nefarious', 'revolting']
     var acts = ["acts", "actions"]
     var incl = ["including, but not limited to", "including", "such as", "like", "with"]
-    var bomb_type = ["explosives", "bombs", "explosive devides"]
+    var bomb_type = ["explosives", "bombs", "explosive devices"]
     var bombs = [bomb_type[Math.floor(Math.random() * bomb_type.length)], `homemade ${bomb_type[Math.floor(Math.random() * bomb_type.length)]}`, `makeshift ${bomb_type[Math.floor(Math.random() * bomb_type.length)]}`, `handmade ${bomb_type[Math.floor(Math.random() * bomb_type.length)]}`]
     var cop = ["police officer", "capitol policeman", "cop"]
     var beaten = ["bludgeoned", "beat"]
